@@ -42,6 +42,8 @@ for i in range(n):
 
     if isbn.isdigit() and len(isbn) == 9:
         isbn_check(isbn, ref_isbn_10, 11, 9)
+    elif isbn.isdigit() and len(isbn) == 12:
+        isbn_check(isbn, ref_isbn_13, 10, 12)
     else:
         print(isbn)
 
